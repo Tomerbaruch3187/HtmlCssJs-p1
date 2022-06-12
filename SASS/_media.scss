@@ -13,10 +13,20 @@
 }
 
 .container {
-    min-height: 60vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     margin-top: 70px;
+}
+
+.iframe-container {
+    margin-top: 35px;
+}
+
+.iframe-container {
+    @include desktop {
+        margin-top: -300px;
+    }
 }
 
 .gallry {
@@ -40,14 +50,3 @@
 }
 
 // .iframe-container iframe {}
-
-
-.iframe-container {
-    @include desktop {
-        margin-top: -60px;
-    }
-}
-
-.iframe-container {
-    margin-top: 30px;
-}
