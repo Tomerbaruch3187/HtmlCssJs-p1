@@ -1,0 +1,35 @@
+.contact {
+    @extend %contactUs;
+}
+
+.userName,
+.lastName,
+.Email {
+    display: none;
+}
+
+
+.userName,
+.lastName,
+.Email {
+    @include desktop {
+        display: initial;
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.stylingFormContact {
+    width: 60%;
+}
+
+.textArea {
+    width: 80%;
+}
+
+input {
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.541);
+}

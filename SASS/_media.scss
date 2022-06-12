@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.gallry {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin: 0 auto;
+}
+
+
+.gallry img {
+    width: 250px;
+}
+
+// youTube
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    min-height: 30vh;
+    margin-bottom: 100px;
+}
+
+// .iframe-container iframe {}
+
+
+.iframe-container {
+    @include desktop {
+        margin-top: -60px;
+    }
+}
+
+.iframe-container {
+    margin-top: 30px;
+}

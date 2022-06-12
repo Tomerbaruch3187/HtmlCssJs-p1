@@ -1,0 +1,295 @@
+$bgc: #fdf8e5;
+$bgcNavbar: #f2f2f2;
+$bgcFooterbar: #f2f2f2;
+$borderColor: #f2cc0f;
+$greenColor: #8cbf3f;
+$purplColor: #9453a6;
+$siteFont: 'Roboto';
+
+:root {
+    --success: #2c7;
+    --error: #e43;
+}
+
+
+// Navbar Style
+
+%styleNavBar {
+    background-color: $bgc;
+    box-shadow: 0 5px 10px -2px rgb(122, 122, 122);
+    background-repeat: no-repeat;
+    border-radius: 0 0 50px 50px;
+}
+
+
+// card-setUp css
+.card1 {
+    width: 200px;
+    height: 250px;
+    background: url('../images/imgN2.jpg') center no-repeat;
+    background-size: cover;
+    border: 2px solid rgba(255, 255, 255, .25);
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+}
+
+.card2 {
+    width: 200px;
+    height: 250px;
+    background: url('../images/imgN3.jpg') center no-repeat;
+    background-size: cover;
+    border: 2px solid rgba(255, 255, 255, .25);
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+}
+
+.card3 {
+    width: 200px;
+    height: 250px;
+    background: url('../images/imgN1.jpg') center no-repeat;
+    background-size: cover;
+    border: 2px solid rgba(255, 255, 255, .25);
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+}
+
+
+.card1:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(30deg);
+
+}
+
+.card2:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(30deg);
+
+}
+
+.card3:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(30deg);
+
+}
+
+
+.card-title {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+}
+
+.card:hover .card-title {
+    transform: translateZ(50px);
+}
+
+
+.cardsFlow {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+// logoHover------------
+%logoHover {
+
+    .perspective-text {
+        color: rgb(255, 255, 255);
+        font-family: Arial;
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+    }
+
+    .perspective-line {
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    p {
+        margin: 0;
+        height: 50px;
+        line-height: 50px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .perspective-line:nth-child(odd) {
+        transform: skew(60deg, -30deg) scaleY(0.667);
+        border-radius: 40px 40px;
+    }
+
+    .perspective-line:nth-child(even) {
+        transform: skew(0deg, -30deg) scaleY(1.337);
+        border-radius: 40px 40px;
+    }
+
+    .perspective-text:hover p {
+        transform: translate(0, -50px);
+        border-radius: 40px 40px;
+    }
+
+    .perspective-line:nth-child(1) {
+        left: 29px;
+    }
+
+    .perspective-line:nth-child(2) {
+        left: 58px;
+        background: rgb(111, 46, 172);
+    }
+
+    .perspective-line:nth-child(3) {
+        left: 87px;
+        background: $greenColor;
+    }
+
+    .perspective-line:nth-child(4) {
+        left: 116px;
+        background: $borderColor;
+    }
+
+    .perspective-line:nth-child(5) {
+        left: 145px;
+    }
+}
+
+// butoonSponsers
+%sponsers {
+    button {
+        display: block;
+        margin: 20px auto;
+        background-color: $purplColor;
+        color: #fff;
+        border: 0;
+        padding: 6px 12px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .weapperr {
+        background-color: rgba(0, 0, 0, .5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        overflow: auto;
+    }
+
+    .popup {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        width: 300px;
+        margin: 10% auto;
+        background-color: #fff;
+        padding: 20px;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .popup a {
+        background-color: $greenColor;
+        color: white;
+        text-decoration: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+
+    .sponserImageSizeing {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+
+// contact page
+
+%contactUs {
+
+    .userStory {
+        text-align: center;
+    }
+
+    .submitButton {
+        color: $purplColor;
+    }
+
+
+    h2 {
+        text-align: center;
+        font-family: 'Roboto display';
+    }
+
+    .formControl {
+        color: rgb(7, 7, 7);
+        font-weight: bold;
+        margin-bottom: 3px;
+        text-align: center;
+        font-family: 'Roboto display';
+        font-size: 1.5em;
+    }
+
+    .formControl input {
+        border: 2px solid rgb(131, 131, 131);
+        border-radius: 3px;
+        width: 100%;
+        padding: 5px;
+        font-size: 1.1rem;
+    }
+
+    .formControl input:focus {
+        outline: 0;
+        border-color: rgb(58, 58, 58);
+    }
+
+    .formControl.success input {
+        border-color: var(--success);
+    }
+
+    .formControl.error input {
+        border-color: var(--error);
+    }
+
+    .formControl small {
+        color: var(--error);
+        visibility: hidden;
+    }
+
+    .formControl.error small {
+        visibility: visible;
+    }
+
+    input[type=submit] {
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 3px;
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import '_setUp';
+@import '_mixinMedia';
+@import '_homePage';
+@import '_about';
+@import '_FAQ';
+@import '_contact';
+@import '_media';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.styleNavBarbar {
+    font-family: 'Henny Penny', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(3, 3, 3);
+    width: 100vw;
+    padding-bottom: 45px;
+    background-image: url(../images/backgroundImage.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .allThePage {
+        @include desktop {
+            width: 80vw;
+            margin: 0 auto;
+        }
+    }
+}
+
+// infoMargin
+.shadowP {
+    margin-top: 10px;
+}
+
+// HRstyle
+.hrStyle {
+    border: 8px solid $purplColor;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    margin: 10px;
+}
+
+.centerHr {
+    display: flex;
+    justify-content: center;
+}
+
+.hrStyle1 {
+    border: 8px solid $greenColor;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    margin: 10px;
+}
+
+.hrStyle2 {
+    border: 8px solid $borderColor;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    margin: 10px;
+}

@@ -1,1 +1,2 @@
-# HtmlCssJs-p1
+# HtmlCssJs-Project
+Mardi Gras HackerU
