@@ -131,12 +131,17 @@
   display: block;
   margin: 20px auto;
   background-color: #9453a6;
-  color: #fff;
+  color: #55266d;
   border: 0;
   padding: 6px 12px;
   font-size: 1.2rem;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
+  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px 0px rgba(0, 0, 0, 0);
+}
+.sponsers .sponserButton:hover {
+  color: rgb(246, 194, 255);
+  font-weight: bold;
 }
 .sponsers .weapperr {
   background-color: rgba(0, 0, 0, 0.5);
